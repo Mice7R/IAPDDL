@@ -8,7 +8,7 @@
         (leer ?x - libro))                  ;; se tiene que leer
 
     (:action leer_predecesor :parameters (?x - libro ?y - libro)
-        :precondition (and (predecesor ?x ?y) (not (leer ?x)))
+        :precondition (and (predecesor ?x ?y) (not (leer ?x)) (leer ?y))
         :effect (leer ?x))
 
     (:action leer_libro :parameters (?x - libro)
