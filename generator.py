@@ -33,8 +33,8 @@ for i in range(P,100):
 for i in range(0,nlibros):
     libros.append("L%d" % i)
 
-print "(define (problem test-01) (:domain planificador) (:objects %s - libro) (:init " % (" ".join(libros))
-i=0
+print "(define (problem test-01) (:domain planificador) (:objects %s - libro) (:init " % (" ".join(libros)),
+i=10
 for (a,b) in dositer(libros):
     c = random.choice(p)
     if c: 
